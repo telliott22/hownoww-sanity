@@ -31,6 +31,15 @@ export default {
     {
       name: 'issuerType',
       type: 'string',
+      options: {
+          list: [
+            { value: 'government', title: 'Government' },
+            { value: 'corporate', title: 'Corportate' },
+            { value: 'bank', title: 'Bank' },
+            { value: 'supranational', title: 'Supranational' },
+          ],
+          layout: 'radio'
+      }
     },
     {
       name: 'issueDate',
@@ -62,23 +71,16 @@ export default {
     },
     {
       name: 'expired',
-      type: 'string',
-      opotions: {
-          list: [
-            { value: true, label: 'Yes' },
-            { value: false, label: 'No' },
-          ],
-          layout: 'radio'
-      }
+      type: 'boolean',
     },
     {
       name: 'country',
       type: 'string',
-      opotions: {
+      options: {
           list: [
-            { value: 'nigeria', label: 'Nigeria' },
-            { value: 'ghana', label: 'Ghana' },
-            { value: 'angola', label: 'Angola' }
+            { value: 'nigeria', title: 'Nigeria' },
+            { value: 'ghana', title: 'Ghana' },
+            { value: 'angola', title: 'Angola' }
           ],
           layout: 'radio'
       }
