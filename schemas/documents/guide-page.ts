@@ -9,6 +9,12 @@ export default {
       title: 'Title'
     },
     {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
