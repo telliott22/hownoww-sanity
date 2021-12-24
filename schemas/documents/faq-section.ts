@@ -13,6 +13,12 @@ export default {
       of:[{
         type: 'faq'
       }]
-    }
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ]
 }

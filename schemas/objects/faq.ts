@@ -8,12 +8,7 @@ export default{
         },
         {
             name: 'answer',
-            type: 'array',
-            of:[
-                {
-                    type: 'block'
-                }
-            ]
+            type: 'markdown'
         },
     ]
 }
