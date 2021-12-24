@@ -1,1 +1,1 @@
-// export {default as navMenu} from './navMenu'
+export {default as faq} from './faq'

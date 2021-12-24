@@ -4,10 +4,12 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
-// import * as objects from './objects'
-// const allObjects = Object.values(objects).map((object) => {
-//   return {...object}
-// })
+import * as objects from './objects'
+const allObjects = Object.values(objects).map((object) => {
+  return {...object}
+})
+
+console.log('objects',objects)
 
 import * as documents from './documents'
 const allDocuments = Object.values(documents).map((document) => {
@@ -24,6 +26,6 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes
     .concat(allDocuments)
-    // .concat(allObjects)
+    .concat(allObjects)
 })
 
